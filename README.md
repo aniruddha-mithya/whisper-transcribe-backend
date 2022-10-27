@@ -7,6 +7,8 @@ If you don't have Whisper installed, install it with the following command:
 pip install git+https://github.com/openai/whisper.git 
 ```
 
+If the above command doesn't work try the same with pip3 or `/usr/local/bin/python3 -m pip install -U git+https://github.com/openai/whisper.git`
+
 For more info, visit the [Whisper home page](https://github.com/openai/whisper).
 
 > **_NOTE:_**  This project uses node v18. If you want to use the dev server, you'll need to have installed node v18 as it depends on the watch feature introduced in v18 instead of nodemon.
