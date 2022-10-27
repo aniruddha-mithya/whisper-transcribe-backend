@@ -25,4 +25,8 @@ Use the following command to start the dev server (requires node v18):
 yarn start:dev
 ```
 
-The audio folder contains a sample audio file that the transcribe.py file will attempt to transcribe. It is also the folder the express server will use to store files uploaded by the user. You can test out the various models by changing the model name on line 4. The available models are listed on the [Whisper Home page](https://github.com/openai/whisper).
+## Notes
+
+* The audio folder contains a sample audio file that the transcribe.py file will attempt to transcribe. It is also the folder the express server will use to store files uploaded by the user. You can test out the various models by changing the model name on line 4. The available models are listed on the [Whisper Home page](https://github.com/openai/whisper).
+* The "medium" model is chosen as it is suited for noisy audio as in the sample audio. The tiny and small models were not satisfactory in my testing. The medium model is a little resource heavy and you may want to close other processes when running this project.
+* On Macs this runs on CPU and is probably slower than it would be with a GPU.
